@@ -1,7 +1,7 @@
 
 class PigLatinizer
 
-  Checker = /\A[^aeiou]+{1}/i
+  Checker = /\A[^aeiou]+/i
 
   def piglatinize (phrase)
     phrase_swapped = phrase.split(" ").map do |word|
