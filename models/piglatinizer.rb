@@ -21,7 +21,7 @@ class PigLatinizer
       first_vowel = word_array.find { |letter| Vowels.include?(letter) }
       new_first_syllable_array = word_array.slice!(word_array.index(first_vowel), word_array.length-word_array.index(first_vowel))
       new_first_syllable_array << word_array
-      word = new_first_syllable_array.join("") + "ay"
+      word = new_first_syllable_array.join + "ay"
     end
   end
 
